@@ -22,7 +22,7 @@ const HeroSection = () => {
         <div className={styles.hero__description}>
           Високоточне визначення меж земельних ділянок, побудова карт та планів
         </div>
-        <button className={core.button}>Зв'яжіться з нами</button>
+        <button className={core.button}>Зв&apos;яжіться з нами</button>
       </div>
     </div>
   );
