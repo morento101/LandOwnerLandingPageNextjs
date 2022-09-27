@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import "../styles/variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  background-color: $backgroundColor;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+::-moz-selection {
+  color: $whiteColor;
+  background: $orangeColor;
+}
+
+::selection {
+  color: $whiteColor;
+  background: $orangeColor;
+}

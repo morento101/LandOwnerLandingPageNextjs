@@ -1,0 +1,50 @@
+@import "../styles/variables.scss";
+
+.aboutUs {
+  &__text {
+    text-align: center;
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__iconText {
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .aboutUs {
+    &__text {
+      font-size: 24px;
+    }
+
+    &__items {
+      flex-direction: column;
+      gap: 45px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .smile {
+      width: 100px;
+      height: 100px;
+    }
+
+    .globe {
+      width: 150px;
+      height: 100px;
+    }
+  }
+}

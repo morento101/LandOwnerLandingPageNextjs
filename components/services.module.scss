@@ -1,0 +1,98 @@
+@import "../styles/variables.scss";
+
+.services {
+  &__content {
+    display: flex;
+    margin-bottom: 150px;
+    justify-content: space-between;
+    gap: 35px;
+    align-items: center;
+
+    &__title {
+      max-width: 482px;
+      font-size: 36px;
+      font-weight: 500;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        bottom: 0;
+        height: 6px;
+        left: 0;
+        background-color: $brownColor;
+        margin: 0px 0px -9px 0px;
+      }
+    }
+
+    &__description {
+      margin-top: 33px;
+      font-weight: 300;
+      font-size: 24px;
+      max-width: 482px;
+    }
+
+    &__img {
+      border-radius: 180px;
+      max-height: 450px;
+      max-width: 450px;
+      overflow: hidden;
+    }
+  }
+
+  &__additional {
+    text-align: center;
+  }
+
+  &__moreInfo {
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  &__button {
+    margin-top: 40px;
+  }
+}
+
+.leftImg {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 1024px) {
+  .services {
+    &__content {
+      &__img {
+        border-radius: 360px;
+        max-height: 300px;
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .services {
+    &__content {
+      flex-direction: column;
+      margin-bottom: 125px;
+
+      &__title {
+        text-align: center;
+        font-size: 28px;
+
+        &:after {
+          content: none;
+        }
+      }
+
+      &__description {
+        text-align: center;
+      }
+    }
+
+    &__moreInfo {
+      font-size: 24px;
+    }
+  }
+}

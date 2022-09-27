@@ -1,0 +1,65 @@
+@import "../styles/variables.scss";
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  &__img {
+    z-index: -1;
+  }
+
+  &__content {
+    z-index: 1;
+    padding-top: 74px;
+  }
+
+  &__brand {
+    font-weight: 400;
+    font-size: 30px;
+    color: $whiteColor;
+    padding-top: 226px;
+  }
+
+  &__works {
+    font-weight: 700;
+    font-size: 46px;
+    color: $whiteColor;
+    z-index: 1;
+
+    max-width: 426px;
+    margin-top: 20px;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 28px;
+    color: $whiteColor;
+
+    max-width: 457px;
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .hero {
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    &__works,
+    &__description {
+      text-align: center;
+    }
+
+    &__brand {
+      font-weight: 400;
+      font-size: 20px;
+      padding-top: 245px;
+    }
+  }
+}

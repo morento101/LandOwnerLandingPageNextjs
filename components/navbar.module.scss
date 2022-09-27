@@ -1,0 +1,52 @@
+@import "styles/variables.scss";
+
+.navbar {
+  background-color: $backgroundColor;
+  height: 74px;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__textGroup {
+    margin: 10px;
+  }
+
+  &__logoText {
+    font-weight: 300;
+    font-size: 24px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .navbar {
+    .hide {
+      display: none;
+    }
+
+    &__logoText {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
