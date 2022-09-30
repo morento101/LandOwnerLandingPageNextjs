@@ -10,14 +10,14 @@
   }
 
   &__content {
-    z-index: 1;
+    position: relative;
   }
 
   &__brand {
     font-weight: 400;
     font-size: 30px;
     color: $whiteColor;
-    padding-top: 220px;
+    padding-top: 230px;
   }
 
   &__works {
@@ -42,12 +42,11 @@
 
 @media only screen and (max-width: 769px) {
   .hero {
-    .content {
+    &__content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: relative;
     }
 
     &__works,

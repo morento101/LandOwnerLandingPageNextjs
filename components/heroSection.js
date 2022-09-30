@@ -5,7 +5,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <div className={styles.hero}>
-      <div>
+      <div className={styles.hero__img}>
         <Image
           priority
           layout="fill"
@@ -14,19 +14,21 @@ const HeroSection = () => {
           src="/images/Hero Image.png"
           blurDataURL="/images/Hero Image.jpg"
           placeholder="blur"
-          alt=""
-          className={styles.hero__img}
+          alt="Hero"
         />
       </div>
-      <div className={`${styles.content} ${core.container}`}>
-        <div className={styles.hero__brand}>ПП ЗЕМЛЕВЛАСНИК-СЛ</div>
-        <div className={styles.hero__works}>
-          Землевпорядні та Геодезичні роботи
+      <div className={core.container}>
+        <div className={`${styles.hero__content}`}>
+          <div className={styles.hero__brand}>ПП ЗЕМЛЕВЛАСНИК-СЛ</div>
+          <div className={styles.hero__works}>
+            Землевпорядні та Геодезичні роботи
+          </div>
+          <div className={styles.hero__description}>
+            Високоточне визначення меж земельних ділянок, побудова карт та
+            планів
+          </div>
+          <button className={core.button}>Зв&apos;яжіться з нами</button>
         </div>
-        <div className={styles.hero__description}>
-          Високоточне визначення меж земельних ділянок, побудова карт та планів
-        </div>
-        <button className={core.button}>Зв&apos;яжіться з нами</button>
       </div>
     </div>
   );
