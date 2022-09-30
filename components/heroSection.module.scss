@@ -3,7 +3,7 @@
 .hero {
   position: relative;
   width: 100vw;
-  height: 724px;
+  height: 100vh;
 
   &__img {
     z-index: -1;
@@ -11,14 +11,13 @@
 
   &__content {
     z-index: 1;
-    padding-top: 44px;
   }
 
   &__brand {
     font-weight: 400;
     font-size: 30px;
     color: $whiteColor;
-    padding-top: 226px;
+    padding-top: 220px;
   }
 
   &__works {
@@ -59,7 +58,7 @@
     &__brand {
       font-weight: 400;
       font-size: 20px;
-      padding-top: 245px;
+      padding-top: 130px;
     }
   }
 }
