@@ -49,6 +49,19 @@
   color: $blackColor;
 }
 
+.unblur {
+  animation: unblur .5s linear;
+}
+
+@keyframes unblur {
+  from {
+    filter: blur(20px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .container {
     max-width: 739px;

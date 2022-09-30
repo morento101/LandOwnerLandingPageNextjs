@@ -20,18 +20,32 @@ function ContactUs() {
           <div className={styles.contactUs__item}>
             <div className={styles.contactUs__itemTitle}>Контакти</div>
             <div className={styles.contactUs__itemText}>
-              <div>098 544 7647</div>
-              <div>0352 520 207</div>
+              <div className={styles.contactUs__itemText__oneLine}>
+                098 544 7647
+              </div>
+              <div className={styles.contactUs__itemText__oneLine}>
+                0352 520 207
+              </div>
             </div>
           </div>
           <div className={styles.contactUs__item}>
             <div className={styles.contactUs__itemTitle}>Графік</div>
             <div className={styles.contactUs__itemText}>
-              <div>пн: 09:00–14:00</div>
-              <div>вт: 09:00–14:00</div>
-              <div>ср: 09:00–14:00</div>
-              <div>чт: 09:00–14:00</div>
-              <div>пт: 09:00–14:00</div>
+              <div className={styles.contactUs__itemText__oneLine}>
+                пн: 09:00–14:00
+              </div>
+              <div className={styles.contactUs__itemText__oneLine}>
+                вт: 09:00–14:00
+              </div>
+              <div className={styles.contactUs__itemText__oneLine}>
+                ср: 09:00–14:00
+              </div>
+              <div className={styles.contactUs__itemText__oneLine}>
+                чт: 09:00–14:00
+              </div>
+              <div className={styles.contactUs__itemText__oneLine}>
+                пт: 09:00–14:00
+              </div>
             </div>
           </div>
           <div className={styles.contactUs__item}>

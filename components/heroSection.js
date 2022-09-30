@@ -1,8 +1,11 @@
 import styles from "./heroSection.module.scss";
 import core from "./core.module.scss";
 import Image from "next/image";
+import { useState } from "react";
 
 const HeroSection = () => {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <div className={styles.hero}>
       <div className={styles.hero__img}>
@@ -12,9 +15,11 @@ const HeroSection = () => {
           objectFit="cover"
           objectPosition="center"
           src="/images/Hero Image.png"
-          blurDataURL="/images/Hero Image.jpg"
+          blurDataURL="/images/Hero Image Blur.jpg"
           placeholder="blur"
           alt="Hero"
+          className={loaded ? core.unblur : ""}
+          onLoadingComplete={() => setLoaded(true)}
         />
       </div>
       <div className={core.container}>

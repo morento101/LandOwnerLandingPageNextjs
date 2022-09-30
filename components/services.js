@@ -1,8 +1,11 @@
 import styles from "./services.module.scss";
 import core from "./core.module.scss";
 import Image from "next/image";
+import { useState } from "react";
 
 const Services = () => {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <div className={core.container}>
       <div className={styles.services}>
@@ -28,6 +31,8 @@ const Services = () => {
                 blurDataURL="/images/Topographic Survey Image.jpg"
                 placeholder="blur"
                 alt="Топографічне знімання"
+                className={loaded ? core.unblur : ""}
+                onLoadingComplete={() => setLoaded(true)}
               />
             </div>
           </div>
@@ -50,6 +55,8 @@ const Services = () => {
                 blurDataURL="/images/Limits Image.jpg"
                 placeholder="blur"
                 alt="Визначення меж"
+                className={loaded ? core.unblur : ""}
+                onLoadingComplete={() => setLoaded(true)}
               />
             </div>
           </div>
@@ -72,6 +79,8 @@ const Services = () => {
                 blurDataURL="/images/Assembly Image.jpg"
                 placeholder="blur"
                 alt="Грошова оцінка"
+                className={loaded ? core.unblur : ""}
+                onLoadingComplete={() => setLoaded(true)}
               />
             </div>
           </div>
