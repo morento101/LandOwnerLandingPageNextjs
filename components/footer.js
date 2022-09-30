@@ -8,9 +8,18 @@ function Footer() {
       <a className={`${styles.footer__companyName} ${core.link}`} href="#top">
         ПП Землевласник-СЛ
       </a>
-      <a href="https://www.facebook.com/zemlevlasnyk/" target="_blank">
+      <a
+        href="https://www.facebook.com/zemlevlasnyk/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div className={styles.footer__facebook}>
-          <Image width={75} height={75} src="/images/Facebook Logo.svg" alt="Facebook"/>
+          <Image
+            width={75}
+            height={75}
+            src="/images/Facebook Logo.svg"
+            alt="Facebook"
+          />
         </div>
       </a>
     </div>
