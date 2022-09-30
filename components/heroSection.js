@@ -11,8 +11,8 @@ const HeroSection = () => {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
-          src="/images/Hero Image.svg"
-          blurDataURL="/images/Hero Image.webp"
+          src="/images/Hero Image.png"
+          blurDataURL="/images/Hero Image.jpg"
           placeholder="blur"
           alt=""
           className={styles.hero__img}

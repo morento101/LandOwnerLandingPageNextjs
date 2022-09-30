@@ -24,8 +24,8 @@ const Services = () => {
               <Image
                 width={450}
                 height={450}
-                src="/images/Topographic Survey Image.svg"
-                blurDataURL="/images/Topographic Survey Image.webp"
+                src="/images/Topographic Survey Image.png"
+                blurDataURL="/images/Topographic Survey Image.jpg"
                 placeholder="blur"
                 alt="Топографічне знімання"
               />
@@ -46,8 +46,8 @@ const Services = () => {
               <Image
                 width={450}
                 height={450}
-                src="/images/Limits Image.svg"
-                blurDataURL="/images/Limits Image.webp"
+                src="/images/Limits Image.png"
+                blurDataURL="/images/Limits Image.jpg"
                 placeholder="blur"
                 alt="Визначення меж"
               />
@@ -68,8 +68,8 @@ const Services = () => {
               <Image
                 width={450}
                 height={450}
-                src="/images/Assembly Image.svg"
-                blurDataURL="/images/Assembly Image.webp"
+                src="/images/Assembly Image.png"
+                blurDataURL="/images/Assembly Image.jpg"
                 placeholder="blur"
                 alt="Грошова оцінка"
               />
