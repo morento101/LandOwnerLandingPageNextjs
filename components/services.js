@@ -25,6 +25,8 @@ const Services = () => {
                 width={450}
                 height={450}
                 src="/images/Topographic Survey Image.svg"
+                blurDataURL="/images/Topographic Survey Image.jpg"
+                placeholder="blur"
                 alt="Топографічне знімання"
               />
             </div>
@@ -41,7 +43,14 @@ const Services = () => {
               </div>
             </div>
             <div className={styles.services__content__img}>
-              <Image width={450} height={450} src="/images/Limits Image.svg" alt="Визначення меж"/>
+              <Image
+                width={450}
+                height={450}
+                src="/images/Limits Image.svg"
+                blurDataURL="/images/Limits Image.jpg"
+                placeholder="blur"
+                alt="Визначення меж"
+              />
             </div>
           </div>
           <div className={styles.services__content}>
@@ -60,6 +69,8 @@ const Services = () => {
                 width={450}
                 height={450}
                 src="/images/Assembly Image.svg"
+                blurDataURL="/images/Assembly Image.jpg"
+                placeholder="blur"
                 alt="Грошова оцінка"
               />
             </div>
