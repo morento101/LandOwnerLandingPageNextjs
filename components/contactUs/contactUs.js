@@ -1,5 +1,5 @@
 import styles from "./contactUs.module.scss";
-import core from "./core.module.scss";
+import core from "/styles/core.module.scss";
 
 function ContactUs() {
   return (

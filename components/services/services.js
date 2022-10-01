@@ -1,10 +1,15 @@
 import styles from "./services.module.scss";
-import core from "./core.module.scss";
+import core from "/styles/core.module.scss";
 import Image from "next/image";
 import { useState } from "react";
+import Button from "/elements/button";
+import Modal from "../modal/modal";
+import { AnimatePresence } from "framer-motion";
+import { close, open } from "/lib/modal";
 
 const Services = () => {
   const [loaded, setLoaded] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className={core.container}>
@@ -91,11 +96,26 @@ const Services = () => {
             документації, виготовлення кадастрових номерів, кадастрове знімання
             земельних ділянок і багато чого іншого
           </div>
-          <button className={`${styles.services__button} ${core.button}`}>
-            Дізнатись більше
-          </button>
+          <Button
+            text="Дізнатись більше"
+            className={styles.services__button}
+            close={() => close(setModalOpen)}
+            open={() => open(setModalOpen)}
+          />
         </div>
       </div>
+      <AnimatePresence
+        initial={false}
+        exitBeforeEnter={true}
+        onExitComplete={() => null}
+      >
+        {modalOpen && (
+          <Modal
+            modalOpen={modalOpen}
+            handleClose={() => close(setModalOpen)}
+          />
+        )}
+      </AnimatePresence>
       <hr className={core.brownHr} />
     </div>
   );

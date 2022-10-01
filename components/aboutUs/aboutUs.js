@@ -1,5 +1,5 @@
 import styles from "./aboutUs.module.scss";
-import core from "./core.module.scss";
+import core from "/styles/core.module.scss";
 import Image from "next/image";
 
 const AboutUs = () => {

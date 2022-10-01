@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Layout from "../components/layout";
-import Navbar from "../components/navbar";
-import HeroSection from "../components/heroSection";
-import Services from "../components/services";
-import AboutUs from "../components/aboutUs";
-import ContactUs from "../components/contactUs";
-import Footer from "../components/footer";
+import Layout from "../components/layout/layout";
+import Navbar from "../components/navbar/navbar";
+import HeroSection from "../components/heroSection/heroSection";
+import Services from "../components/services/services";
+import AboutUs from "../components/aboutUs/aboutUs";
+import ContactUs from "../components/contactUs/contactUs";
+import Footer from "../components/footer/footer";
 
 export default function FirstPost() {
   return (

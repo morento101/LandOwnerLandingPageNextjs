@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "../components/navbar.module.scss";
-import core from "../components/core.module.scss";
+import styles from "./navbar.module.scss";
+import core from "/styles/core.module.scss";
 
 const Navbar = () => {
   return (
@@ -8,7 +8,10 @@ const Navbar = () => {
       <div className={`${styles.navbar__container} ${core.container}`}>
         <div className={styles.navbar__group}>
           <div className={styles.navbar__textGroup}>
-            <a className={`${styles.navbar__logoText} ${core.link}`} href="#top">
+            <a
+              className={`${styles.navbar__logoText} ${core.link}`}
+              href="#top"
+            >
               ПП Землевласник-СЛ
             </a>
           </div>
