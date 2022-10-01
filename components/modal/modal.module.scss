@@ -1,8 +1,35 @@
 @import "/styles/variables.scss";
 
 .modal {
-    background-color: $brownColor;
-    width: 50vw;
-    height: 50vh;
-    border-radius: 25px;
+  background: linear-gradient(0deg, rgba(136,78,28,1) 0%, rgba(246,157,81,1) 100%);
+  width: 50vw;
+  height: 50vh;
+  border-radius: 25px;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 25px;
+
+    &:after {
+      content: "✕";
+      color: #fff;
+      font-weight: 700;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .modal {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .modal {
+    width: 75vw;
+  }
 }
