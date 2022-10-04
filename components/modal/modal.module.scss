@@ -1,10 +1,13 @@
 @import "/styles/variables.scss";
 
 .modal {
-  background: linear-gradient(0deg, rgba(136,78,28,1) 0%, rgba(246,157,81,1) 100%);
-  width: 50vw;
-  height: 50vh;
+  width: 40vw;
+  height: 40vh;
   border-radius: 25px;
+
+  &__img {
+    border-radius: 25px;
+  }
 
   &__close {
     position: absolute;
@@ -14,7 +17,7 @@
 
     &:after {
       content: "✕";
-      color: #fff;
+      color: $backgroundColor;
       font-weight: 700;
       font-family: Arial, sans-serif;
       cursor: pointer;

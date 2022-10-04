@@ -51,7 +51,10 @@ const HeroSection = () => {
         onExitComplete={() => null}
       >
         {modalOpen && (
-          <Modal modalOpen={modalOpen} handleClose={() => close(setModalOpen)} />
+          <Modal
+            modalOpen={modalOpen}
+            handleClose={() => close(setModalOpen)}
+          />
         )}
       </AnimatePresence>
     </div>

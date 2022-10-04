@@ -1,26 +1,29 @@
 import { motion } from "framer-motion";
 import Backdrop from "/components/backdrop/backdrop";
 import styles from "./modal.module.scss";
-import core from "/styles/core.module.scss";
+import Image from "next/image";
 
-const dropIn = {
+const flip = {
   hidden: {
-    y: "-100vh",
+    transform: "scale(0) rotateX(-360deg)",
     opacity: 0,
+    transition: {
+      delay: 0.3,
+    },
   },
   visible: {
-    y: "0",
+    transform: " scale(1) rotateX(0deg)",
     opacity: 1,
     transition: {
-      duration: 0.1,
-      type: "spring",
-      damping: 25,
-      stiffness: 500,
+      duration: 0.5,
     },
   },
   exit: {
-    y: "100vh",
+    transform: "scale(0) rotateX(360deg)",
     opacity: 0,
+    transition: {
+      duration: 0.5,
+    },
   },
 };
 
@@ -29,12 +32,20 @@ const Modal = ({ handleClose, text }) => {
     <Backdrop onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        variants={dropIn}
+        variants={flip}
         initial="hidden"
         animate="visible"
         exit="exit"
         className={styles.modal}
+        id="modal"
       >
+        <Image
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          src="/images/wave-haikei.svg"
+          className={styles.modal__img}
+        />
         <div className={styles.modal__close} onClick={handleClose}></div>
         <p>{text}</p>
       </motion.div>
