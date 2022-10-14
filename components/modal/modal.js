@@ -58,35 +58,30 @@ const Modal = ({ handleClose }) => {
             </div>
             <div className={styles.modal__item}>
               <Image width={31} height={31} src="/images/Mail Icon.svg" />
-              <div>
-                <div className={styles.modal__text}>
-                  zemlevlasnuk-sl@gmail.com
-                </div>
+
+              <div className={styles.modal__text}>
+                zemlevlasnuk-sl@gmail.com
               </div>
             </div>
             <div className={styles.modal__item}>
               <Image width={31} height={31} src="/images/Clock Icon.svg" />
-              <div>
-                <div className={styles.modal__text}>Пн-Пт: 09:00-14:00</div>
-              </div>
+
+              <div className={styles.modal__text}>Пн-Пт: 09:00-14:00</div>
             </div>
           </div>
           <div className={styles.modal__itemGroup}>
             <div className={styles.modal__item}>
               <Image width={31} height={31} src="/images/Target Icon.svg" />
-              <div>
-                <div className={`${styles.modal__text} ${styles.white}`}>
-                  Проспект Степана Бандери, 34А 2, Тернопіль, Тернопільська
-                  область, Україна, 46000
-                </div>
+
+              <div className={`${styles.modal__text} ${styles.white}`}>
+                Проспект Степана Бандери, 34А 2, Тернопіль, Тернопільська
+                область, Україна, 46000
               </div>
             </div>
             <div className={styles.modal__item}>
               <Image width={31} height={31} src="/images/Message Icon.svg" />
-              <div>
-                <div className={`${styles.modal__text} ${styles.white}`}>
-                  Фейсбук сторінка
-                </div>
+              <div className={`${styles.modal__text} ${styles.white}`}>
+                Фейсбук сторінка
               </div>
             </div>
           </div>
