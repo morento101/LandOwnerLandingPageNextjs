@@ -1,8 +1,8 @@
-import styles from "./aboutUs.module.scss";
+import styles from "./AboutUs.module.scss";
 import core from "/styles/core.module.scss";
 import Image from "next/image";
 
-const AboutUs = () => {
+export const AboutUs = () => {
   return (
     <div className={core.container}>
       <div className={styles.aboutUs}>
@@ -44,5 +44,3 @@ const AboutUs = () => {
     </div>
   );
 };
-
-export default AboutUs;

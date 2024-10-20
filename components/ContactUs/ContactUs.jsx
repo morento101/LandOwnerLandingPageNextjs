@@ -1,7 +1,7 @@
-import styles from "./contactUs.module.scss";
+import styles from "./ContactUs.module.scss";
 import core from "/styles/core.module.scss";
 
-function ContactUs() {
+export const ContactUs = () => {
   return (
     <div className={styles.contactUs}>
       <div className={core.container}>
@@ -21,7 +21,7 @@ function ContactUs() {
             <div className={styles.contactUs__itemTitle}>Контакти</div>
             <div className={styles.contactUs__itemText}>
               <div className={styles.contactUs__itemText__oneLine}>
-                098 544 7647
+                +38 (098) 544 76 47
               </div>
               <div className={styles.contactUs__itemText__oneLine}>
                 0352 520 207
@@ -32,19 +32,13 @@ function ContactUs() {
             <div className={styles.contactUs__itemTitle}>Графік</div>
             <div className={styles.contactUs__itemText}>
               <div className={styles.contactUs__itemText__oneLine}>
-                пн: 09:00–14:00
+                Пн: 09:00–14:00
               </div>
               <div className={styles.contactUs__itemText__oneLine}>
-                вт: 09:00–14:00
+                Ср: 09:00–14:00
               </div>
               <div className={styles.contactUs__itemText__oneLine}>
-                ср: 09:00–14:00
-              </div>
-              <div className={styles.contactUs__itemText__oneLine}>
-                чт: 09:00–14:00
-              </div>
-              <div className={styles.contactUs__itemText__oneLine}>
-                пт: 09:00–14:00
+                Пт: 09:00–14:00
               </div>
             </div>
           </div>
@@ -60,5 +54,3 @@ function ContactUs() {
     </div>
   );
 }
-
-export default ContactUs;

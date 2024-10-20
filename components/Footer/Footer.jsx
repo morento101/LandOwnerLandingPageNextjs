@@ -1,8 +1,8 @@
-import styles from "./footer.module.scss";
+import styles from "./Footer.module.scss";
 import core from "/styles/core.module.scss";
 import Image from "next/image";
 
-function Footer() {
+export const Footer = () => {
   return (
     <div className={`${styles.footer} ${core.container}`}>
       <a className={`${styles.footer__companyName} ${core.link}`} href="#top">
@@ -25,5 +25,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

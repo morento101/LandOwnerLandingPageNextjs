@@ -1,13 +1,13 @@
-import styles from "./heroSection.module.scss";
+import styles from "./HeroSection.module.scss";
 import core from "/styles/core.module.scss";
 import Image from "next/image";
 import { useState } from "react";
-import Button from "/elements/button";
-import Modal from "../modal/modal";
+import { Button } from "/components/Button";
+import { Modal } from "../Modal";
 import { AnimatePresence } from "framer-motion";
 import { open, close } from "/lib/modal";
 
-const HeroSection = () => {
+export const HeroSection = () => {
   const [loaded, setLoaded] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -60,5 +60,3 @@ const HeroSection = () => {
     </div>
   );
 };
-
-export default HeroSection;

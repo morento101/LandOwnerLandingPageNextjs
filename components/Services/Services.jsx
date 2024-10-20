@@ -1,13 +1,13 @@
-import styles from "./services.module.scss";
+import styles from "./Services.module.scss";
 import core from "/styles/core.module.scss";
 import Image from "next/image";
 import { useState } from "react";
-import Button from "/elements/button";
-import Modal from "../modal/modal";
+import { Button } from "/components/Button";
+import { Modal } from "../Modal";
 import { AnimatePresence } from "framer-motion";
 import { close, open } from "/lib/modal";
 
-const Services = () => {
+export const Services = () => {
   const [loaded, setLoaded] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -120,5 +120,3 @@ const Services = () => {
     </div>
   );
 };
-
-export default Services;

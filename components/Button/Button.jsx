@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import core from "/styles/core.module.scss";
+import styles from "./Button.module.scss";
 
-function Button({ text, modalOpen, close, open, className = "" }) {
+export const Button = ({ text, modalOpen, close, open, className = "" }) => {
   return (
     <div>
       <motion.button
-        className={`${core.button} ${className}`}
+        className={`${styles.button} ${className}`}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => (modalOpen ? close() : open())}
@@ -15,5 +15,3 @@ function Button({ text, modalOpen, close, open, className = "" }) {
     </div>
   );
 }
-
-export default Button;

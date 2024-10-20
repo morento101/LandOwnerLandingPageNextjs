@@ -1,8 +1,8 @@
 import Image from "next/image";
-import styles from "./navbar.module.scss";
+import styles from "./Navbar.module.scss";
 import core from "/styles/core.module.scss";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <header className={styles.navbar}>
       <div className={`${styles.navbar__container} ${core.container}`}>
@@ -24,8 +24,8 @@ const Navbar = () => {
             alt="Розклад роботи"
           />
           <div className={styles.navbar__textGroup}>
-            <div className={styles.navbar__text}>Пн-Пт з 9:00 до 14:00</div>
-            <div className={styles.navbar__text}>Сб-Нд - вихідні</div>
+            <div className={styles.navbar__text}>Пн, Ср, Пт з 9:00 до 14:00</div>
+            <div className={styles.navbar__text}>Вв, Чт, Сб, Нд - вихідні</div>
           </div>
         </div>
         <div className={styles.navbar__group}>
@@ -44,5 +44,3 @@ const Navbar = () => {
     </header>
   );
 };
-
-export default Navbar;

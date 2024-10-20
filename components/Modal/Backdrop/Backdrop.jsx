@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import styles from "./backdrop.module.scss"
+import styles from "./Backdrop.module.scss"
 
-const Backdrop = ({ children, onClick }) => {
+export const Backdrop = ({ children, onClick }) => {
   return (
     <motion.div
       onClick={onClick}
@@ -13,6 +13,4 @@ const Backdrop = ({ children, onClick }) => {
       {children}
     </motion.div>
   );
-};
-
-export default Backdrop;
+}
